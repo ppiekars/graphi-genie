@@ -1,3 +1,4 @@
+from be.core.celery_utils import create_celery
 from fastapi import FastAPI
 
 from be.api.api_v1.api import api_router
@@ -8,3 +9,5 @@ app = FastAPI(
 )
 
 app.include_router(api_router, prefix=settings.API_V1_STR)
+
+celery = create_celery()
