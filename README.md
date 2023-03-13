@@ -31,7 +31,7 @@ Create a virtual environment (recommended) and install the required dependencies
 ```bash
 python3 -m venv env
 source env/bin/activate
-pip install -r requirements.txt
+pip install -r be/requirements.txt
 ```
 
 ### 4. Run the server
